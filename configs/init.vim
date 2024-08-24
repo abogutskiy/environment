@@ -60,13 +60,6 @@ colorscheme solarized
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 map <C-n>v :NERDTreeToggle<CR>
 
-"YouCompleteMe plugin
-let g:ycm_autoclose_preview_window_after_completion=1
-nnoremap ,g :YcmCompleter GoToDefinitionElseDeclaration<CR>
-let g:pymode_rope_complete_on_dot = 0
-let g:ycm_goto_buffer_command = 'new-tab'
-let g:ycm_global_ycm_extra_conf = "/Users/abogutskiy/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-
 "latex conf
 set grepprg=grep\ -nH\
 let g:tex_flavor='latex'

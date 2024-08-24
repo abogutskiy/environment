@@ -1,6 +1,6 @@
 # User configuration
 
-export USERNAME=abogutskiy
+export USERNAME=$USER
 export HOSTNAME=`hostname`
 
 export PYTHONSTARTUP=~/.pythonrc.py
@@ -46,7 +46,7 @@ export HISTCONTROL=ignoreboth
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/abogutskiy/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -115,3 +115,7 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi

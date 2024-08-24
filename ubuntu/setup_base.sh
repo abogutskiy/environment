@@ -5,6 +5,8 @@ if [ "$(id -u)" -eq 0 ]; then
   exit 1
 fi
 
+set -x
+
 # create all necessary files/folders
 mkdir -p ~/.ssh
 chmod 700 ~/.ssh
