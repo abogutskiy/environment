@@ -23,6 +23,7 @@ sudo apt update \
     && sudo apt install -y \
         zsh \
         git \
+        git-crypt \
         vim \
         neovim \
         vim \
