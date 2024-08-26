@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [ ! -d ~/environment ]; then
     echo "Please pre-clone environment repo with configs before running the script:"
