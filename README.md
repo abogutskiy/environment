@@ -18,21 +18,13 @@ Basic setup consists of several steps:
 
 How to setup:
 ```
-   # create sudoer user and login
-   sh -c "$(curl -fsSL https://github.com/abogutskiy/environment/blob/main/ubuntu/setup_base.sh)
-   git clone https://github.com/abogutskiy/environment.git
-   ./environment/ubuntu/setup_configs.sh
+   bash -c "$(curl -fsSL https://raw.githubusercontent.com/abogutskiy/environment/main/ubuntu/create_user.sh)" -- $newuser $password \
+  && su $newuser
+   curl -fsSL https://raw.githubusercontent.com/abogutskiy/environment/main/ubuntu/setup_base.sh | bash
+   ~/environment/ubuntu/setup_configs.sh
    # prepare ssh config, github priv key, add pub key to authorized_keys
 ```
 
-or just script from root
-
-```
-   sh -c "$(curl -fsSL https://github.com/abogutskiy/environment/blob/main/ubuntu/setup_base.sh) $NEW_USER"
-   git clone https://github.com/abogutskiy/environment.git
-   ./environment/ubuntu/setup_configs.sh
-   # prepare ssh config, github priv key, add pub key to authorized_keys
-```
 
 Install common dev-machine tools and libs including:
 * neovim
