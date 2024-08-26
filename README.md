@@ -17,10 +17,12 @@ Basic setup consists of several steps:
 # Ubuntu
 
 How to setup:
-> sh -c "$(curl -fsSL https://github.com/abogutskiy/environment/blob/main/ubuntu/setup_base.sh)
-> git clone https://github.com/abogutskiy/environment.git
-> ./environment/ubuntu/setup_configs.sh
-> # prepare ssh config, github priv key, add pub key to authorized_keys
+```
+   sh -c "$(curl -fsSL https://github.com/abogutskiy/environment/blob/main/ubuntu/setup_base.sh)
+   git clone https://github.com/abogutskiy/environment.git
+   ./environment/ubuntu/setup_configs.sh
+   # prepare ssh config, github priv key, add pub key to authorized_keys
+```
 
 Install common dev-machine tools and libs including:
 * neovim
