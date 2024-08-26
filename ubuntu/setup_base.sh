@@ -48,6 +48,8 @@ deploy() {
 
     sudo usermod -aG docker $USER
     sudo systemctl enable docker
+
+    git clone https://github.com/abogutskiy/environment.git ~/
 }
 
 if [ $# -eq 1 ]; then
