@@ -40,7 +40,9 @@ sudo apt update \
         htop \
         apt-transport-https \
         ca-certificates \
-        software-properties-common
+        software-properties-common \
+        postgresql \
+        postgresql-contrib
 
 sudo chsh -s $(which zsh)
 
