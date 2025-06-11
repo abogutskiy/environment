@@ -28,6 +28,7 @@ sudo apt update \
         neovim \
         vim \
         curl \
+        docker.io \
         wget \
         gnupg \
         openssl \
