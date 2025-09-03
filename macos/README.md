@@ -56,6 +56,8 @@ default for new accounts, so to set zsh run ``chsh -s /bin/zsh``.
 If you use zsh as your default shell, you might like the open-source [Oh My Zsh](https://ohmyz.sh) framework for zsh
 configuration (.zshrc script from this repo uses it as well).
 
+NB: also a nice idea is to use [ghostty](https://ghostty.org/) terminal.
+
 ## Other things to do
 Don't forget to move keys, and .ssh/config file and start the ssh agent.
 
