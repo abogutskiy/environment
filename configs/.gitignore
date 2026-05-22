@@ -25,6 +25,9 @@ CMakeCache.txt
 *.swo
 *.un~
 
+# Claude
+.claude
+
 # IDE-generated files
 #####################
 .idea

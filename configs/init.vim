@@ -133,9 +133,10 @@ set history=50
 "set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set autowrite
 set mouse=a
-set guioptions=aegirL
-
-set pastetoggle=<F2>
+if !has('nvim')
+    set guioptions=aegirL
+    set pastetoggle=<F2>
+endif
 inoremap <C-v> <F2><C-r>+<F2>
 vnoremap <C-c> "+y
 
