@@ -34,9 +34,6 @@ echo "Run PluginInstall in vim or neovim"
 cp ~/environment/configs/.gitconfig ~/
 cp ~/environment/configs/.gitignore ~/
 
-# modify rc
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
-echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 
 # switch default shell to zsh and install oh-my-zsh (skip if zsh is already default)
 ZSH_PATH=$(command -v zsh)
@@ -65,6 +62,10 @@ cp ~/environment/configs/.bashrc ~/
 cp ~/environment/configs/.profile ~/
 
 cp ~/environment/configs/.bash_aliases ~/
+
+# modify rc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 
 # python
 cp ~/environment/configs/.pythonrc ~/
