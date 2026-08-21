@@ -1,11 +1,12 @@
 ## Working with repositories
 
-All local repositories are in `~/projects/`. Remote origin is `git@github.com:ppl-ai/<repo-name>`.
+All local repositories are in `~/dev/`. Remote origin is `git@github.com:ppl-ai/<repo-name>`.
 
 When asked to modify files in another repository:
 
-1. **Check `~/projects/`** for the repo first.
-2. **If not found**, clone it: `git clone git@github.com:ppl-ai/<repo-name>.git ~/projects/<repo-name>` (SSH keys are configured).
+1. **Check `~/dev/`** for the repo first. check {repo_name}, {repo_name}-%i
+   folders first.
+2. **If not found**, clone it: `git clone git@github.com:ppl-ai/<repo-name>.git ~/dev/<repo-name>` (SSH keys are configured).
 3. **If found**, check for local changes (`git status`):
    - **Has uncommitted changes or is on a non-main branch**: Tell the user and ask how to proceed. Do not discard their work.
    - **Clean on main**: `git pull` to update, then make the requested changes.
