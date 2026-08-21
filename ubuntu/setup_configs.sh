@@ -45,11 +45,11 @@ fi
 
 
 # Oh my zsh
-rm -rf ~/.oh-my-zsh
-set +x
-echo "sh -c curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
-RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-set -x
+#rm -rf ~/.oh-my-zsh
+#set +x
+#echo "sh -c curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh"
+#RUNZSH=no CHSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+#set -x
 
 mkdir -p ~/.oh-my-zsh/themes
 cp ~/environment/configs/debug22.zsh-theme ~/.oh-my-zsh/themes/debug22.zsh-theme

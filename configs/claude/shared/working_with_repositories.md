@@ -1,10 +1,13 @@
 ## Working with repositories
 
-All local repositories are in `~/dev/`. Remote origin is `git@github.com:ppl-ai/<repo-name>`.
+
+The main repository is ~/srch-search-api with a remore origin `git@github.com:ppl-ai/srch-search-api`
+
+All other local repositories are in `~/projects/`. Remote origin is `git@github.com:ppl-ai/<repo-name>`.
 
 When asked to modify files in another repository:
 
-1. **Check `~/dev/`** for the repo first. check {repo_name}, {repo_name}-%i
+1. **Check `~/projects/`** for the repo first. check {repo_name}, {repo_name}-%i
    folders first.
 2. **If not found**, clone it: `git clone git@github.com:ppl-ai/<repo-name>.git ~/dev/<repo-name>` (SSH keys are configured).
 3. **If found**, check for local changes (`git status`):
